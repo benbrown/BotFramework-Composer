@@ -1335,6 +1335,7 @@
     "@types/express" "^4.16.1"
     "@types/passport" "^1.0.4"
     axios "^0.21.1"
+    botframework-schema "^4.11.1"
     express-serve-static-core "0.1.1"
     json-schema "^0.2.5"
 
@@ -3168,6 +3169,18 @@ botbuilder-lg@4.12.0-rc1:
     lodash "^4.17.19"
     path "^0.12.7"
     uuid "^8.3.2"
+
+botbuilder-stdlib@4.12.0-internal:
+  version "4.12.0-internal"
+  resolved "https://registry.yarnpkg.com/botbuilder-stdlib/-/botbuilder-stdlib-4.12.0-internal.tgz#21540a6bef6e571dfd4ef16033083314df9871f0"
+  integrity sha512-AwtWOZlgTaQte+uBeDOAy83veksMOzKHR62k3UYgUeqgsUamtqi6+OGV633hLi49ZmF/Gs8dP4iid2jCLDEQBg==
+
+botframework-schema@^4.11.1:
+  version "4.12.0"
+  resolved "https://registry.yarnpkg.com/botframework-schema/-/botframework-schema-4.12.0.tgz#42431b5949fb666087399fd555c21c0322099397"
+  integrity sha512-W0/0xvrxafRrusWfGsGiwK2X4FOoIL7obvitkS+3XZfwhr6XeDKLClkQMbaU0GCawVF6DtbiPKErHpPUhd2Oig==
+  dependencies:
+    botbuilder-stdlib "4.12.0-internal"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -7234,6 +7247,11 @@ prop-types@^15.5.10, prop-types@^15.6.2, prop-types@^15.7.2:
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.8.1"
+
+proxy-from-env@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
+  integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
 
 prr@~1.0.1:
   version "1.0.1"
