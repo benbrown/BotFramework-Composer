@@ -254,10 +254,10 @@
   resolved "https://registry.yarnpkg.com/@jsdevtools/ono/-/ono-7.1.3.tgz#9df03bbd7c696a5c58885c34aa06da41c8543796"
   integrity sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==
 
-"@microsoft/bf-cli-command@4.13.0-dev.20210401.8dc6ffe":
-  version "4.13.0-dev.20210401.8dc6ffe"
-  resolved "https://registry.yarnpkg.com/@microsoft/bf-cli-command/-/bf-cli-command-4.13.0-dev.20210401.8dc6ffe.tgz#c391d6a4cda03063a74fff186c4b2ee247cb0afa"
-  integrity sha512-daGbfwXcBwNWkBAR23MsFags18eMNUCpH8BNfZKEv0El3bLifVhfbGILQhpsM0BFCzcgVyooLA6cnBAUPopZ0Q==
+"@microsoft/bf-cli-command@4.13.0-rc1":
+  version "4.13.0-rc1"
+  resolved "https://registry.yarnpkg.com/@microsoft/bf-cli-command/-/bf-cli-command-4.13.0-rc1.tgz#7fb517c0fc6df91f8e09e991b9f8613d6f261ea6"
+  integrity sha512-eQGeTlThxuQ2+vKFjeAuOn8YHRuYnrHcteyBRIWJfT+D9QORkTYu8oo1lr6IT6IXh9pwf+ThK5zkbAnXrK62mQ==
   dependencies:
     "@oclif/command" "~1.5.19"
     "@oclif/config" "~1.13.3"
@@ -269,13 +269,13 @@
     fs-extra "^7.0.1"
     tslib "^2.0.3"
 
-"@microsoft/bf-dialog@4.13.0-dev.20210401.8dc6ffe":
-  version "4.13.0-dev.20210401.8dc6ffe"
-  resolved "https://registry.yarnpkg.com/@microsoft/bf-dialog/-/bf-dialog-4.13.0-dev.20210401.8dc6ffe.tgz#160ec22f79e1049e48e8e40e0eaf13206a29b267"
-  integrity sha512-zg4z3Svvq0KFhO8GEjdMPC5dNUjUSm/7lm0Qmq1rxFgVNQJscBpaOwV2e6dwnJJmKgq5sSUjQSIAdkzLKufMDw==
+"@microsoft/bf-dialog@4.13.0-rc1":
+  version "4.13.0-rc1"
+  resolved "https://registry.yarnpkg.com/@microsoft/bf-dialog/-/bf-dialog-4.13.0-rc1.tgz#323abfbff2e6c9040e70ba4a55e6c5b7d71a7f60"
+  integrity sha512-7huJdUg1XvgTCCCnvXt+YpNoVVLqUxdtxnPaNTf2Pl4iFx59w6U6hlod9+KGzz2qpv0oHCMjARr1WEcoL8zPHQ==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.1"
-    "@microsoft/bf-cli-command" "4.13.0-dev.20210401.8dc6ffe"
+    "@microsoft/bf-cli-command" "4.13.0-rc1"
     "@oclif/command" "~1.5.19"
     "@oclif/config" "~1.13.3"
     "@oclif/errors" "~1.2.2"
