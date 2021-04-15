@@ -43,7 +43,8 @@
     }
   },
   "resolutions": {
-    "@botframework-composer/types": "file:../../Composer/packages/types"
+    "@botframework-composer/types": "file:../../Composer/packages/types",
+    "@microsoft/bf-cli-command": "4.14.0-dev.20210409.1a5070e"
   },
   "dependencies": {
     "@bfc/extension": "file:../../Composer/packages/extension",
