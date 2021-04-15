@@ -90,6 +90,7 @@ const headerTextContainer = css`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  min-width: 600px;
   width: 50%;
 `;
 
@@ -299,13 +300,13 @@ export const Header = () => {
         )}
         {isShow && (
           <IconButton
-            ariaDescription={formatMessage('Open web chat')}
+            ariaDescription={formatMessage('Test in web chat')}
             disabled={!webchatEssentials?.botUrl}
             iconProps={{
               iconName: 'OfficeChat',
             }}
             styles={buttonStyles}
-            title={formatMessage('Open Web Chat')}
+            title={formatMessage('Test in Web Chat')}
             onClick={() => {
               const currentWebChatVisibility = !isWebChatPanelVisible;
               setWebChatPanelVisibility(currentWebChatVisibility);
