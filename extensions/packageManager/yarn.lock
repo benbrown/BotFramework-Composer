@@ -254,10 +254,10 @@
   resolved "https://registry.yarnpkg.com/@jsdevtools/ono/-/ono-7.1.3.tgz#9df03bbd7c696a5c58885c34aa06da41c8543796"
   integrity sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==
 
-"@microsoft/bf-cli-command@~1.0.0":
-  version "4.14.0-dev.20210409.1a5070e"
-  resolved "https://registry.yarnpkg.com/@microsoft/bf-cli-command/-/bf-cli-command-4.14.0-dev.20210409.1a5070e.tgz#57835eabff843775a93ec7408b94509a84e043cb"
-  integrity sha512-WVl1JZRvNF3r/dBP1UtZAdbuc2KqI1dReUXfyQNaVc5CwIvNmKDBOpWVsKyQRYsEdjiilmBY/mJj+GecwWkCig==
+"@microsoft/bf-cli-command@4.14.0-dev.20210415.161c029":
+  version "4.14.0-dev.20210415.161c029"
+  resolved "https://registry.yarnpkg.com/@microsoft/bf-cli-command/-/bf-cli-command-4.14.0-dev.20210415.161c029.tgz#9f79d634d99900cba80116a63257136d3d9762b6"
+  integrity sha512-a5vsEajCmGZBxP0XeUUVhxMEzQi1qZQJhO9SkBWgEh/XElr9z1Qsd8Ik6QZh4esMWaKyMMkfPGqKnYveax6Htw==
   dependencies:
     "@oclif/command" "~1.5.19"
     "@oclif/config" "~1.13.3"
@@ -269,12 +269,13 @@
     fs-extra "^7.0.1"
     tslib "^2.0.3"
 
-"@microsoft/bf-dialog@https://botbuilder.myget.org/F/botbuilder-declarative/npm/@bfcomposer/bf-dialog/-/@bfcomposer/bf-dialog-1.0.1.tgz":
-  version "1.0.1"
-  resolved "https://botbuilder.myget.org/F/botbuilder-declarative/npm/@bfcomposer/bf-dialog/-/@bfcomposer/bf-dialog-1.0.1.tgz#7b5c6b13255469e728497d5fe4dad301fa23124c"
+"@microsoft/bf-dialog@4.14.0-dev.20210415.161c029":
+  version "4.14.0-dev.20210415.161c029"
+  resolved "https://registry.yarnpkg.com/@microsoft/bf-dialog/-/bf-dialog-4.14.0-dev.20210415.161c029.tgz#19e07da92cfcd5f23ed3d753968263103cd0b151"
+  integrity sha512-TkiysvgdxuSiNiOsgqgFG2xFF5tz35/81Qo4wTfE7gEts8jKJQxPeU73QTbGirkhs6l2m+55prw6Pj4QfmddMg==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.1"
-    "@microsoft/bf-cli-command" "~1.0.0"
+    "@microsoft/bf-cli-command" "4.14.0-dev.20210415.161c029"
     "@oclif/command" "~1.5.19"
     "@oclif/config" "~1.13.3"
     "@oclif/errors" "~1.2.2"

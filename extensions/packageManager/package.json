@@ -43,15 +43,14 @@
     }
   },
   "resolutions": {
-    "@botframework-composer/types": "file:../../Composer/packages/types",
-    "@microsoft/bf-cli-command": "4.14.0-dev.20210409.1a5070e"
+    "@botframework-composer/types": "file:../../Composer/packages/types"
   },
   "dependencies": {
     "@bfc/extension": "file:../../Composer/packages/extension",
     "@bfc/extension-client": "file:../../Composer/packages/extension-client",
     "@bfc/ui-shared": "file:../../Composer/packages/lib/ui-shared",
     "@emotion/core": "^10.0.35",
-    "@microsoft/bf-dialog": "https://botbuilder.myget.org/F/botbuilder-declarative/npm/@bfcomposer/bf-dialog/-/@bfcomposer/bf-dialog-1.0.1.tgz",
+    "@microsoft/bf-dialog": "4.14.0-dev.20210415.161c029",
     "@uifabric/fluent-theme": "^7.1.4",
     "axios": "^0.19.2",
     "axios-https-proxy": "^0.1.1",

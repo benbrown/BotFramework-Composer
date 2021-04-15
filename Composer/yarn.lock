@@ -3958,10 +3958,10 @@
   resolved "https://registry.yarnpkg.com/@jsdevtools/ono/-/ono-7.1.3.tgz#9df03bbd7c696a5c58885c34aa06da41c8543796"
   integrity sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==
 
-"@microsoft/bf-cli-command@4.13.0-rc1":
-  version "4.13.0-rc1"
-  resolved "https://registry.yarnpkg.com/@microsoft/bf-cli-command/-/bf-cli-command-4.13.0-rc1.tgz#7fb517c0fc6df91f8e09e991b9f8613d6f261ea6"
-  integrity sha512-eQGeTlThxuQ2+vKFjeAuOn8YHRuYnrHcteyBRIWJfT+D9QORkTYu8oo1lr6IT6IXh9pwf+ThK5zkbAnXrK62mQ==
+"@microsoft/bf-cli-command@4.14.0-dev.20210415.161c029":
+  version "4.14.0-dev.20210415.161c029"
+  resolved "https://registry.yarnpkg.com/@microsoft/bf-cli-command/-/bf-cli-command-4.14.0-dev.20210415.161c029.tgz#9f79d634d99900cba80116a63257136d3d9762b6"
+  integrity sha512-a5vsEajCmGZBxP0XeUUVhxMEzQi1qZQJhO9SkBWgEh/XElr9z1Qsd8Ik6QZh4esMWaKyMMkfPGqKnYveax6Htw==
   dependencies:
     "@oclif/command" "~1.5.19"
     "@oclif/config" "~1.13.3"
@@ -3988,13 +3988,13 @@
     fs-extra "^7.0.1"
     tslib "^2.0.3"
 
-"@microsoft/bf-dialog@4.13.0-rc1":
-  version "4.13.0-rc1"
-  resolved "https://registry.yarnpkg.com/@microsoft/bf-dialog/-/bf-dialog-4.13.0-rc1.tgz#323abfbff2e6c9040e70ba4a55e6c5b7d71a7f60"
-  integrity sha512-7huJdUg1XvgTCCCnvXt+YpNoVVLqUxdtxnPaNTf2Pl4iFx59w6U6hlod9+KGzz2qpv0oHCMjARr1WEcoL8zPHQ==
+"@microsoft/bf-dialog@4.14.0-dev.20210415.161c029":
+  version "4.14.0-dev.20210415.161c029"
+  resolved "https://registry.yarnpkg.com/@microsoft/bf-dialog/-/bf-dialog-4.14.0-dev.20210415.161c029.tgz#19e07da92cfcd5f23ed3d753968263103cd0b151"
+  integrity sha512-TkiysvgdxuSiNiOsgqgFG2xFF5tz35/81Qo4wTfE7gEts8jKJQxPeU73QTbGirkhs6l2m+55prw6Pj4QfmddMg==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.1"
-    "@microsoft/bf-cli-command" "4.13.0-rc1"
+    "@microsoft/bf-cli-command" "4.14.0-dev.20210415.161c029"
     "@oclif/command" "~1.5.19"
     "@oclif/config" "~1.13.3"
     "@oclif/errors" "~1.2.2"
@@ -4002,11 +4002,12 @@
     "@types/lru-cache" "^5.1.0"
     "@types/xml2js" "^0.4.4"
     ajv "^6.12.2"
+    axios "~0.21.1"
     chalk "^2.4.2"
     clone "^2.1.2"
     fs-extra "^8.1.0"
-    get-uri "~3.0.2"
     globby "^11.0.0"
+    https-proxy-agent "^5.0.0"
     json-ptr "~1.3.0"
     json-schema-merge-allof "~0.7.0"
     os "~0.1.1"
@@ -4080,15 +4081,14 @@
     semver "^5.5.1"
     tslib "^2.0.3"
 
-"@microsoft/bf-lu@4.14.0-dev.20210408.1a5070e":
-  version "4.14.0-dev.20210408.1a5070e"
-  resolved "https://registry.yarnpkg.com/@microsoft/bf-lu/-/bf-lu-4.14.0-dev.20210408.1a5070e.tgz#fb4b9f0d8e79c4f7f6bd90d3f40c8920250fc7c0"
-  integrity sha512-eqV0xvBAciD9bAgFe9GHK4wt9z/p0ZmhIG46MsyY7bN92N0/TKG+IQy9fxnz/zv9ssqap5gpO+qdOzXEVReg6A==
+"@microsoft/bf-lu@4.14.0-dev.20210415.161c029":
+  version "4.14.0-dev.20210415.161c029"
+  resolved "https://registry.yarnpkg.com/@microsoft/bf-lu/-/bf-lu-4.14.0-dev.20210415.161c029.tgz#da17cadfd52d9025d823c7bb0822962c6458b2bf"
+  integrity sha512-UAoUsAMaqfDw5EvRhAf2iVt/SDYWO7gdeyVfIHDrDt6FoQM/n8YQt1etm8GujhIJxodGu5ZkB7oySrwJYNe58w==
   dependencies:
     "@types/node-fetch" "~2.5.5"
     antlr4 "~4.8.0"
     axios "~0.21.1"
-    axios-https-proxy "^0.1.1"
     chalk "2.4.1"
     console-stream "^0.1.1"
     deep-equal "^1.0.1"
@@ -4096,6 +4096,7 @@
     fs-extra "^8.1.0"
     get-stdin "^6.0.0"
     globby "^10.0.1"
+    https-proxy-agent "^5.0.0"
     intercept-stdout "^0.1.2"
     lodash "^4.17.19"
     node-fetch "~2.6.0"
@@ -12591,7 +12592,7 @@ get-stream@^5.0.0, get-stream@^5.1.0:
   dependencies:
     pump "^3.0.0"
 
-get-uri@3, get-uri@~3.0.2:
+get-uri@3:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/get-uri/-/get-uri-3.0.2.tgz#f0ef1356faabc70e1f9404fa3b66b2ba9bfc725c"
   integrity sha512-+5s0SJbGoyiJTZZ2JTpFPLMPSch72KEqGOTvQsBqg0RBWvwhWUSYZFAtz3TPW0GXJuLBJPts1E241iHg+VRfhg==
