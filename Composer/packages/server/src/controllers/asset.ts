@@ -5,6 +5,7 @@ import { Request, Response } from 'express';
 import { BotTemplate, emptyBotNpmTemplateName, QnABotTemplateId } from '@bfc/shared';
 import formatMessage from 'format-message';
 
+import fetch from '../utility/fetch';
 import AssetService from '../services/asset';
 import { getNpmTemplates } from '../utility/npm';
 import log from '../logger';
