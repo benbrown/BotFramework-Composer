@@ -234,6 +234,7 @@ const initSettingsListeners = () => {
 
   ipcMain.on('update-user-settings', (_ev, settings: UserSettings) => {
     checkAppLocale(settings.appLocale);
+    ElectronWindow.getInstance().browserWindow?.webContents.send('cleanup');
   });
 };
 
@@ -308,10 +309,21 @@ async function run() {
     }
   });
 
-  app.on('before-quit', () => {
+  app.once('before-quit', (event) => {
+    // don't quit yet
+    event.preventDefault();
     const mainWindow = ElectronWindow.getInstance().browserWindow;
     mainWindow?.webContents.send('session-update', 'session-ended');
+
+    // quit once the client has finished cleaning up
+    ipcMain.once('cleanup-finished', (event) => {
+      log('Cleanup finished. Quitting app.');
+      app.quit();
+    });
     mainWindow?.webContents.send('cleanup');
+
+    // quit anyways if the client takes longer than 5 seconds to cleanup
+    setTimeout(app.quit, 5000);
   });
 
   app.on('activate', () => {

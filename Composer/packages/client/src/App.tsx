@@ -35,8 +35,9 @@ export const App: React.FC = () => {
     checkNodeVersion();
     fetchExtensions();
     fetchFeatureFlags();
-    ipcRenderer?.on('cleanup', (_event) => {
-      performAppCleanupOnQuit();
+    ipcRenderer?.on('cleanup', async (_event) => {
+      await performAppCleanupOnQuit();
+      ipcRenderer.send('cleanup-finished');
     });
   }, []);
 
